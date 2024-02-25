@@ -24,12 +24,12 @@ public class Main {
         max = numbers[1];
 
         //Data in the array was compared to find the minimum and maximum value
-        for (int i = 0; i < numbers.length; i++) {
-            if(numbers[i] < min) {
-                min = numbers[i];
+        for (int number : numbers) {
+            if (number < min) {
+                min = number;
             }
-            if(numbers[i] > max) {
-                max = numbers[i];
+            if (number > max) {
+                max = number;
             }
         }
         System.out.println("The smallest number is " + min);
